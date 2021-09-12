@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  
+  
+  html {
+    font-size: 24px;
+    font-family: 'Unica One', cursive;
+  }
+  main {
+    background-image: url("https://64.media.tumblr.com/1b3065cb8a85f613393c34e2e51b029c/b67e2211e2349433-39/s1280x1920/918e9f9fa9c7fe42cc8868c9d937ed4697ac6925.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-bottom: 0%;
+  }
+  
+  #app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 1rem 0;
+   
+  }
+  
+  #app h1 {
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    margin-bottom: 8px;
+    border: 6px solid white;
+    padding: 5px;
+    text-align: center;
+    
+  }
+
+  .calculator {
+    display: grid;
+    grid-template-rows: 175px 1fr;
+    border: 5px solid rgb(68, 68, 68);
+    border-radius: 25px;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    height: 600px;
+    width: 400px;
+    padding: 10px;
+    background-color: gray;
+    grid-gap: 10px;
+    box-shadow: 0 5px 10px 5px black;
+    overflow: hidden;
+   
+  }
+
+  
+  .display {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-row: 1;
+    background-color: rgb(70, 95, 76);
+    border-radius: 10px;
+    padding: 10px;
+    height: 173px
+  }
+  
+
+  .controls {
+    grid-row: 2;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+}
+
+  .operations {
+   
+    grid-column: 4 / 5;
+    grid-row: 1 / 6;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: repeat(5, 1fr);
+    
+}
+.operations button {
+    font-size: 1.5rem;
+    background-color: rgb(54, 114, 114);
+    color: white;
+}
+.operations :last-child {
+    background-color: orange;
+    
+}
+
+  .memory {
+
+    grid-column: 1 / 4;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-gap: 10px;
+  }
+  .memory :first-child {
+    background-color: rgb(207, 87, 71);
+  }
+  .memory :last-child {
+    background-color: rgb(200, 200, 200);
+  }
+  .digits {
+    
+    grid-column: 1 / 4;
+    grid-row: 2 / 6;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  
+  }
+  .digits :last-child {
+    grid-column: 2 / 4;
+  }
+  .digits button {
+    font-size: larger;
+    
+  }
+  .digits button:last-child {
+    color: rgb(161, 5, 5);
+  }
+  .digits .decimal {
+    font-size: 1.5rem;
+  }
+  button {
+    border-radius: 10px;
+    font-size: 80%;
+    border: 2px solid rgb(82, 80, 80);
+    background-color: rgb(255, 255, 255);
+    transform: translateY(-6px);
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(128, 128, 128, 0.19);
+
+
+  }
+  button:active {
+    transform: translateY(-2px);
+  }
+  a {
+    color: white;
+    font-size: smaller;
+    
+  }
